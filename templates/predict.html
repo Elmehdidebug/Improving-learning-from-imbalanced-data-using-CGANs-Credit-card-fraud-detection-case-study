@@ -13,9 +13,6 @@
    width: 400px; height: 150px; background-color: #EEE;float: right; box-shadow: 10px 10px 10px grey;
    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
   }
-  body {
-    background-color: #F1FFFA;
-  }
   .marge{
     margin-top: 50px;
   }
@@ -26,6 +23,7 @@ color: red;
  </style>           
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Fraud Detection</a>
@@ -59,7 +57,7 @@ color: red;
   <li class="nav-item" role="presentation">
     <a class="nav-link " id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Enter values</a>
   </li>
-  <li class="nav-item active" role="presentation">
+  <li class="nav-item show active" role="presentation">
     <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Upload file</a>
   </li>
 </ul>
@@ -77,14 +75,14 @@ color: red;
                   <div class="input-field col s12">
                   <p>
                     <label>
-                      <input class="with-gap " name="sampling" type="radio" checked/>
-                      <span class="hover">OverSamling : SMOTE</span>
+                      <input class="with-gap hover" name="sampling" type="radio" checked/>
+                      <span class="hover">OverSamling : GANs</span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap hover" name="sampling" type="radio"  />
-                      <span class="hover">OverSamling : GANs</span>
+                      <input class="with-gap " name="sampling" type="radio" />
+                      <span class="hover">OverSamling : SMOTE</span>
                     </label>
                   </p>
                       <p>
@@ -115,10 +113,16 @@ color: red;
                       <span class="hover">XGBoost</span>
                     </label>
                   </p>
-                      <p>
+                  <p>
                     <label>
                       <input class="with-gap " name="algo" type="radio" />
                       <span class="hover">ANN</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap " name="algo" type="radio" />
+                      <span class="hover">1DCNN and LSTM</span>
                     </label>
                   </p>
 
@@ -210,14 +214,14 @@ color: red;
                   <div class="input-field col s12">
                   <p>
                     <label>
-                      <input class="with-gap " name="sampling" type="radio" checked/>
-                      <span class="hover">OverSamling : SMOTE</span>
+                      <input class="with-gap hover" name="sampling" type="radio" checked/>
+                      <span class="hover">OverSamling : GANs</span>
                     </label>
                   </p>
                   <p>
                     <label>
-                      <input class="with-gap hover" name="sampling" type="radio"  />
-                      <span class="hover">OverSamling : GANs</span>
+                      <input class="with-gap " name="sampling" type="radio" />
+                      <span class="hover">OverSamling : SMOTE</span>
                     </label>
                   </p>
                       <p>
@@ -252,6 +256,12 @@ color: red;
                     <label>
                       <input class="with-gap " name="algo" type="radio" />
                       <span class="hover">ANN</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input class="with-gap " name="algo" type="radio" />
+                      <span class="hover">1DCNN and LSTM</span>
                     </label>
                   </p>
                   </div>

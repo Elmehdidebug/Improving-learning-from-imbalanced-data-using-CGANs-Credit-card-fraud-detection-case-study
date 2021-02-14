@@ -29,9 +29,9 @@ from sklearn.ensemble import RandomForestClassifier
 # %%
 
 
-data = pd.read_csv('mlflow/data/creditcard.csv')
-data_RUS=pd.read_csv('mlflow/data/creditcard_RUS_8feat.csv')
-tsne= pd.read_csv('mlflow/data/tsneData.csv')
+data = pd.read_csv('creditcard.csv')
+data_RUS=pd.read_csv('data_RUS.csv')
+tsne= pd.read_csv('tsneData.csv')
 # %%
 
 
