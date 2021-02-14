@@ -1,5 +1,26 @@
 # Improving-learning-from-imbalanced-data-using-CGANs-Credit-card-fraud-detection-case-study
-This is a demo project to elaborate how Machine Learn Models are deployed on production using Flask API
+Fraud detection concerns many financial institutions and banks as this crime costs them around $ 67 billion per year, the most common fraud is the credit card one. It is defined in Wikipedia as fraud committed using a payment card, such as a credit card or debit card with the purpose of obtaining goods or services, or to make payment to another account which is controlled by a criminal. This is a very relevant problem that demands the attention of communities such as machine learning and data science where the solution to this problem can be automated. This problem is particularly challenging from the perspective of learning, as it is characterized by various factors such as class imbalance. The number of valid transactions far outnumber fraudulent ones.
+In this paper, two main parts will be discussed, the imbalanced
+data problem and the approaches used, such as:
+• Undersampling : RANDOM UNDER SAMPLER
+• Oversampling : SMOTE and CGANS
+The different models that we used in our predictions are:
+• Logistic regression
+• Random forest
+• Xgboost
+• Artificial Neural Network
+• LSTM
+• CNN-1D
+The metric that we focused on during our predictions is the
+Area Under Precision Recall Curve “AUPRC”, because it is a useful
+performance metric for imbalanced data in a problem setting where
+you care a lot about finding the positive examples.
+
+we focused on the Oversampling using Conditional Generative Adversarial Networks (CGANs) which are an extension of the of the GANs model. GANs were introduced in 2014 by Ian J. Goodfellow in the article Generative Adversarial Network. Generative Adversarial Networks belong to the set of generative models. It means that they can produce / to generate new content. The difference between the GANs and CGANs is that in CGANs both the Generator and Discriminator both receive some additional conditioning input information.
+
+In our case we found that RANDOM FOREST algorithm with CGANS for sampling is the best model.
+
+We Developed a web application, using FLASK for back-end and Bootstrap/MaterlizeCss for the front-end, to predict whether a transaction is fraud or not, by a single transaction or by a file of transactions. we provide also in this user interface some statistics about the dataset using PLOTLY library.For collaborative work, we used MLFLOW tool to manage the MLlifecycle, including experimentation, reproducibility, and a centralmodel registry.
 
 ### Prerequisites
 You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
